@@ -15,9 +15,7 @@ app:
   - MY_STEPLIB_REPO_FORK_GIT_URL: $MY_STEPLIB_REPO_FORK_GIT_URL
 
 workflows:
-  ci:
-    after_run:
-    - test
+  test:
     steps:
     - script:
         title: Cleanup _tmp dir
@@ -46,8 +44,6 @@ workflows:
         - clone_depth: ""
     - nuget-restore:
         title: Nuget restore
-  test:
-    steps:
     - path::./:
         title: Step Test
         inputs:

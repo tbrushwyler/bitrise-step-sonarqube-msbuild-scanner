@@ -7,7 +7,7 @@ Step for running SonarQube MSBuild Scanner CLI.
 
 Can be run directly with the [bitrise CLI](https://github.com/bitrise-io/bitrise),
 just `git clone` this repository, `cd` into it's folder in your Terminal/Command Line
-and call `bitrise run ci`.
+and call `bitrise run test`.
 
 *Check the `bitrise.yml` file for required inputs which have to be
 added to your `.bitrise.secrets.yml` file!*
@@ -21,7 +21,7 @@ Step by step:
    (the `.bitrise.secrets.yml` is a git ignored file, you can store your secrets in it)
 6. Check the `bitrise.yml` file for any secret you should set in `.bitrise.secrets.yml`
   * Best practice is to mark these options with something like `# define these in your .bitrise.secrets.yml`, in the `app:envs` section.
-7. Once you have all the required secret parameters in your `.bitrise.secrets.yml` you can just run this step with the [bitrise CLI](https://github.com/bitrise-io/bitrise): `bitrise run ci`
+7. Once you have all the required secret parameters in your `.bitrise.secrets.yml` you can just run this step with the [bitrise CLI](https://github.com/bitrise-io/bitrise): `bitrise run testt`
 
 An example `.bitrise.secrets.yml` file:
 
