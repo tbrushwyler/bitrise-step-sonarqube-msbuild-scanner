@@ -13,9 +13,9 @@ summary: |
   Step for running SonarQube MSBuild Scanner CLI.
 description: |
   Step for running SonarQube MSBuild Scanner CLI.
-website: https://github.com/tbrushwyler/bitrise-step-sonar-qube-msbuild-scanner
-source_code_url: https://github.com/tbrushwyler/bitrise-step-sonar-qube-msbuild-scanner
-support_url: https://github.com/tbrushwyler/bitrise-step-sonar-qube-msbuild-scanner/issues
+website: https://github.com/tbrushwyler/bitrise-step-sonarqube-msbuild-scanner
+source_code_url: https://github.com/tbrushwyler/bitrise-step-sonarqube-msbuild-scanner
+support_url: https://github.com/tbrushwyler/bitrise-step-sonarqube-msbuild-scanner/issues
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
@@ -103,6 +103,7 @@ inputs:
 
       is_required: false
       is_expand: true
+      is_sensitive: true
   - scanner_build_commands:
     opts:
       title: Build commands.
@@ -130,6 +131,7 @@ inputs:
 
       is_required: false
       is_expand: true
+      is_sensitive: true
   - is_debug: "false"
     opts:
       title: Print all executed shell commands to a build log?
